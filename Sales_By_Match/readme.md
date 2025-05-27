@@ -18,7 +18,8 @@ John works at a clothing store. He has a large pile of socks that he must pair b
 Return the total number of matching pairs of socks.
 
 ### Sample Input
-9
+n=9  
+
 10 20 20 10 10 30 50 10 20
 
 ### Sample Output
