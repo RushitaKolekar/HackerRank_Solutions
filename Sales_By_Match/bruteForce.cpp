@@ -1,3 +1,5 @@
+//nested loop solution
+
 #include <vector>
 using namespace std;
 
@@ -19,3 +21,7 @@ int sockMerchant(int n, vector<int> ar) {
     }
     return pairs;
 }
+
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(1) 
