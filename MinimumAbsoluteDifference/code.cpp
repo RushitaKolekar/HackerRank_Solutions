@@ -23,5 +23,6 @@ int minimumAbsoluteDifference(vector<int> arr) {
     return min_diff;
 }
 
+
 // Time Complexity: O(n log n) due to sorting
 // Space Complexity: O(1)
