@@ -12,4 +12,4 @@ int designerPdfViewer(vector<int> h, string word) {
 }
 
 //Time Complexity: O(n), where n is the length of the word.
-//Space Complexity: O(1), since we are using a fixed-size array for heights.
+//Space Complexity: O(1)
