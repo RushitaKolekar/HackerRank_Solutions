@@ -16,4 +16,4 @@ int pickingNumbers(vector<int> a) {
 }
 
 // Time Complexity: O(nlogn) due to sorting
-// Space Complexity: O(1) since we are using only a few extra variables
+// Space Complexity: O(1) 

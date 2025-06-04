@@ -13,4 +13,4 @@ long repeatedString(string s, long n) {
 }
 
 // Time Complexity: O(m) where m is the length of string s
-// Space Complexity: O(1) since we are using a constant amount of extra space
+// Space Complexity: O(1) 
