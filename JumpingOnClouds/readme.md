@@ -1,45 +1,42 @@
-# Jumping on the Clouds: Revisited
+# Jumping on the Clouds
 
-## ☁️🌀 Problem Description
-A character jumps through circular clouds (array of 0s and 1s) where:
-- 0 = Safe cloud
-- 1 = Thunder cloud (costs 2 extra energy)
-- Starts at cloud 0 with 100 energy
-- Each jump of size `k` costs 1 energy
-- Game ends when returning to cloud 0
+## Problem Link
+[HackerRank Challenge - Jumping on the Clouds](https://www.hackerrank.com/contests/mountblue-technologies/challenges/jumping-on-the-clouds)
 
-Calculate remaining energy after completing the journey.
+## Description
+A game where Emma must jump through clouds represented by an array:
+- **0** = Safe cloud
+- **1** = Thunder cloud (must avoid)
+- Can jump **1 or 2 clouds** at a time
+- Starts at cloud 0, ends at last cloud
+- Find the **minimum number of jumps** required
 
-### Key Rules:
-- Array is circular (wraps around)
-- Each jump is exactly `k` clouds forward
-- Landing on thunder cloud loses additional energy
-- Stop when returning to starting cloud (0)
+## Input Format
+- First line: `n` (number of clouds, 2 ≤ n ≤ 100)
+- Second line: `n` space-separated binary integers (cloud types)
 
-## 🎯 Input/Output Format
+## Output Format
+Minimum jumps needed to reach the last cloud
 
+## Example
 ### Input
-- First line: `n` (number of clouds), `k` (jump distance)
-- Second line: `n` space-separated integers (0 or 1)
+7
+0 0 1 0 0 1 0
 
 ### Output
-- Remaining energy level
+4
 
-## 📝 Example
-
-**Input:**
-8 2
-0 0 1 0 0 1 1 0
-
-
-**Output:**
-92
+### Explanation
+Optimal path (0-indexed):
+1. Jump to cloud 1 (1 jump)
+2. Jump to cloud 3 (2 jumps)
+3. Jump to cloud 4 (1 jump)
+4. Jump to cloud 6 (2 jumps)
+Total jumps: 4
 
 
-**Explanation:**
-Path: 0 → 2 → 4 → 6 → 0
-- Start: 100
-- Jump to 2 (thunder): 100-1-2 = 97
-- Jump to 4 (safe): 97-1 = 96
-- Jump to 6 (thunder): 96-1-2 = 93
-- Jump to 0 (safe): 93-1 = 92 
+## Jump Sequence Visualization
+Clouds: 0 0 1 0 0 1 0
+Jumps: _/ _/
+2 2
+Total: 4 jumps
